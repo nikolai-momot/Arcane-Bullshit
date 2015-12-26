@@ -1,0 +1,82 @@
+CARDS_APP_RGB-01	The Inverted Squirrel	The opposite of squirrels.
+CARDS_APP_RGB-02	The Pantsless Beekeeper	This card seems to be a specific warning about pantlessness around bees, but it’s really a general endorsement of pantslessness at work. The occasional bee sting is the price the pantsless beekeeper pays for absolute freedom.
+CARDS_APP_RGB-03	The Gross Cup	Sometimes in life, you’ve got to take a drink from a gross cup. Let go of your of your preconceptions about infectious diseases and take a chance! Even being metaphorically or literally poisoned might bring new opportunities.
+CARDS_APP_RGB-04	The Rat Trout	You are a king, perched in a brass nest, crying tears of yolk. You are an inverted cave pushing grapes into the cosmic navel.
+CARDS_APP_RGB-05	The Bird-Book-Snake Thing	Knowledge is dangerous, but awesome. Without vision in our pursuits, we risk becoming monstrous puppets of waste and chaos. But that could be really fun.
+CARDS_APP_RGB-06	Future Not Found	This one is just like a funny joke. You know, like when a website doesn’t load or something? Or maybe it’s really serious and you won’t have a future?
+CARDS_APP_RGB-07	The Surfinb' Chimp	Is the Surfin’ Chimp a cool dude looking for the perfect ride? Or a prisoner, drifting eternally in a sea of alienation and indifference? Your confidence may lead you into dark and lonely waters, where you will be constricted by the greasy tentacles of hubris.
+CARDS_APP_RGB-08	The Heron Bearer	The heron bearer signifies a burden carried, which may hold some ceremonial or symbolic value, but is otherwise completely fucked up and unnecessary.
+CARDS_APP_RGB-09	The Pie Knight	The Pie Knight is An adventurous risk taker who follows his passions. He’s also kind of an idiot.
+CARDS_APP_RGB-11	Chaos Mom	Chaos Mom is the highest progenitor of pain and chaos. The daughter of future grandma, the estranged spouse of techno-dad, Chaos Mom represents confusion and disorder, but also unconditional love, and sandwiches.
+CARDS_APP_RGB-12	The Anthropomorphic Carrot	The Anthropomorphic Carrot just wants you to kick back and eat 5-10 servings of vegetables each day. Is that too much to ask? He seems friendly enough, but what’s with all the hugs?
+CARDS_APP_RGB-13	RoboDodo	You have an opportunity for a second chance, but this time remember to adapt and evolve.
+CARDS_APP_RGB-14	Everything's Fine	Apocalyptic visions may be the sign of a head injury. Do not place containers of hot or boiling liquids near the edge of a stove, sink, or table. Something will end unexpectedly.
+CARDS_APP_RGB-15	Raptor Riding A Dolphin in Space	Exciting but risky opportunities await you. If you heed the call of awesomeness, you may become lost and thoroughly annoying to less awesome people.
+CARDS_APP_RGB-16	Future Grandma	The image of the cyborg grandmother appears extensively throughout masonic and alchemical texts. She is typically associated with moth balls, racism, and deep immersion in a hyper-real simulation of existence. You may want to switch cable providers.
+CARDS_APP_RGB-17	Random Clip Art	It is often tempting to fall back on a cheap, ready-made library of solutions, but don’t doubt your creative ingenuity. Create your own answers instead of relying on the convenience of cliches. Or, whatever, just use the cliches.
+CARDS_APP_RGB-18	It's Probably Nothing	You may see signs everywhere, but generally it’s safe to assume that you are not special in any way and anything that might be happening is the product of randomness.
+CARDS_APP_RGB-19	The Greased Priest	Spiritual comfort will continue to elude you. Or you’ll have an erotic encounter with a clergyman.
+CARDS_APP_RGB-20	Card of Cards	Cards cards cards cards cards cards cards cards cards cards cards cards cards.
+CARDS_APP_RGB-21	Madame Rufflebonnet	Trying to disguise something as something else actually works, with delightful results. Don’t be a gossip, or you’ll fall in a mud puddle.
+CARDS_APP_RGB-22	The Filthy Mattress	It may be time to discard something very intimate. Stop attributing depth to that which appears mundane.
+CARDS_APP_RGB-23	Supreme Galactic Emperor	Patriarchal authority. Power, masculine strength. Great motivation to achieve success.
+CARDS_APP_RGB-24	Infinite Cosmic Mess	The universe is a hideous, stupid explosion of chaos and nonsense which happens to have created an orb with little guys all over it. This card means that someone you have a crush on will misinterpret a text message.
+CARDS_APP_RGB-25	The Floppy Key	Keep trying to force things when they don’t appear to fit right away.
+CARDS_APP_RGB-26	Giving Birth To A Skull	A positive phase will feel like a success, but seeds you have sown will bear upsetting fruit. Then everything will be cool for a while. The catfish represents a pleasant but short-lived interest in spelunking.
+CARDS_APP_RGB-27	The Skeleton Eating A Banana	This is probably about death and penises.
+CARDS_APP_RGB-28	Wolves	Capitalize on your talents, especially if you have wolves for fingers.
+CARDS_APP_RGB-29	Crazy Mystical Shit	Some mysteries are best not understood. Trust your intuition, look for signs everywhere, and let your confusion guide you. The less sense your solutions to everyday problems make, the better. When in doubt, just put some apple cider vinegar on it.
+CARDS_APP_RGB-30	Meaningless Garbage	When this card appears, it is suggesting you take a step back and view your situation from a different perspective and with a calmer logic.
+CARDS_APP_RGB-31	The Orgy	Don’t doubt the love you feel around you, but also be careful where you put your mouth.
+CARDS_APP_RGB-32	Old Man Pouring Water On An Eyeball	Get ready to use the following phrases in conversation: “kindly remove your hovercraft from the piazza” , “I think you’ve mistaken me for a bidet”, “I am not harvesting your organs, go back to sleep.”
+CARDS_APP_RGB-33	The Giant Sperm Fighting A Dove	Productive impulses may lead to discord and violence. Something that seems like a deep yet solvable frustration is actually just part of life. Stop trying to solve things; embrace compromise and accept your misery.
+CARDS_APP_RGB-34	The Queen Of Holes	Some things look like entrances, but are really holes. Likewise, some holes are really passages, and certain passages may lead to endless voids. Avoid trying to help strangers, be wary of investments, and don’t go within 15 feet of woodpeckers.
+CARDS_APP_RGB-35	The Feral Nerd	Follow your interests into the dizzying wilderness of obsession! Eschew personal hygiene and social status in favour of esoteric knowledge!
+CARDS_APP_RGB-36	Shrimp And Guns	Don’t be afraid to defend your tastes. You will make a happy and lasting union with a brown-haired person.
+CARDS_APP_RGB-37	The False Face	Something that appears to be one thing is in fact another thing that appears to be a thing but is actually another completely different thing concealing another thing.
+CARDS_APP_RGB-38	Mnumrlploxymn	Skip shop class, load up your bucket with chalk and limes, and get down to your nearest octagonal cave. Then deposit 35 tickets, and proceed through the wing-shaped door toward the bent camel statue. After that, you’ll never have to feed the ostrich again.
+CARDS_APP_RGB-39	Urinal Death	An unfortunate development will be made even less pleasurable by the events that follow it. There is always a possibility that this card signifies ‘rebirth,’ but it would have to be ‘urinal rebirth.’
+CARDS_APP_RGB-40	The Flying Man	Everything seems to be going really well, with no sign of ever changing. Maybe a fresh start in some area would be a good idea - have a think about it.
+CARDS_APP_RGB-41	Saxophone Fetus	Something yet unborn will yield jazzy results. Protected within the uterus of destiny, the soul makes beautiful music, but will that music survive passage through the vaginal canal of uncertainty?
+CARDS_APP_RGB-42	Pit Bull Driving A Tiny Truck	Some people think pitbulls are mean. Some people say their owners make them mean. It’s time to get your inner pitbull a tiny truck, so it feels the pride it deserves to feel and doesn’t injure any metaphorical toddlers.
+CARDS_APP_RGB-43	The Beefcake	Pleasant surprises delivered by a sexy stranger. The beefcake represents prudence, mortgages, baldness, and the apocalypse. If this card is inverted, decrement your sexiness score by 7.
+CARDS_APP_RGB-44	The Sword Hoarder	An attempt to reconcile with your former housekeeper will fail. It’s time to let go of the anger you’ve been holding onto, or maybe start a sword collection.
+CARDS_APP_RGB-45	Knees	In an emerging conflict, you’ll have to choose whether to trust your feet or your genitals.
+CARDS_APP_RGB-46	Instinct	Sometimes it’s best just to ease up and let your reptilian-bird mind take the wheel. Surrender control in such matters as: accounting, basketball, thunderstorms, and party planning. Stop thinking and start nervously swallowing whole eggs! You’ve got this!
+CARDS_APP_RGB-47	Something	Everything is a dream. Or at least, something is. This card represents something, and implies strongly that you should do something about something. Perhaps there is something in your life you should do something with, or to?
+CARDS_APP_RGB-48	The Golden Retriever	Loyalty will come into question. A colleague whose slobbery clumsiness you mistook for stupidity is actually a dog.
+CARDS_APP_RGB-49	The Wierd Tree	The weird tree smells like diamonds and mustard. He likes apostrophes and marriage.
+CARDS_APP_RGB-50	Nobody	You’ll receive many death threats and feel a deeply foreboding dread, but ignore them.
+CARDS_APP_RGB-51	The All-Seeing Slice	Wisdom comes with the combo, but privacy is a premium topping. You can’t unbake the crusts of time.
+CARDS_APP_RGB-52	Half-Price Hot Wings	You will be presented with an opportunity you cannot ignore. Afterwards your hands will be all sticky.
+CARDS_APP_RGB-53	You're Fucked	Put more courage and enthusiasm into what you do. Or take more time to reflect in solitude. It doesn’t matter. You’re fucked.
+CARDS_APP_RGB-54	The Dildo Wizard	A dildo wizard is only popular at the right kind of party. Make sure you’re at the right kind of party before you get out your dildos, or face the consequences.
+CARDS_APP_RGB-55	Horse Death	Beating a dead horse isn’t always necessary, but sometimes it’s just super fun. In several fictional cultures, the death of a horse is very good luck and means that your nephews will prosper in war and romance.
+CARDS_APP_RGB-56	The Gravy Funnel	Your gravy train has made a long journey from flavour country and it’s finally pulling into the gratification station. It’s time to gorge yourself on the sweet brown nectar of the gods. You’ve earned it!
+CARDS_APP_RGB-57	Baseball Goat	Somebody is probably going to throw you a surprise party. Either that or you’ll cut your fingernails just a little bit too short. Maybe either one of those things will be a metaphor. Although you feel like an impostor, you will be required to hit a ball with a stick.
+CARDS_APP_RGB-58	Werewolf And Pig Making Out	Your love life is in perfect harmony. Avoid nature, liquids, and glitter.
+CARDS_APP_RGB-59	King Fancy	King Fancy says let your hair down and treat yourself to something fancy. In matters of love, expect things to become fancier than they currently are.
+CARDS_APP_RGB-60	The Pupa Vomiting on Cats	We all must transform to survive, but transformations can be super gross. Stop fearing change, get out there and vomit on life!
+CARDS_APP_RGB-61	Coffin Full Of Tacos Full Of Snakes	If you just put some money in the bank, it’s going to gather interest at a prescribed rate, as determined by your financial institution. Many exciting new developments will yield horrifying further developments, giving way to peace, then more horror.
+CARDS_APP_RGB-62	The Robot Riding A Gorilla	When The Robot Riding a Gorilla appears, it should be taken as a grave reminder to heed curfews, exfoliate, and secure your rhombus.
+CARDS_APP_RGB-63	Siamese Cavemen	There are two sides to everything. They are both kind of stupid.
+CARDS_APP_RGB-64	Nip-Slip Pope	You’ll get the attention you crave, but not necessarily for the reason you’ve imagined. Shocking revelations await you. Make the best of weird surprises. Try not to think about tombs, caves, yolk, or pencils.
+CARDS_APP_RGB-65	Rhubarb Tony	Opulence, power, rhubarb. Your success in upcoming ventures in agriculture will hinge upon your own potency, steadfastness, dynamism, sprightliness, and buoyancy.
+CARDS_APP_RGB-66	The Parasitic Fruit	Things you set in motion some time ago are now beginning to bear fruit. Fruit that is eating your face and exploding out of your head. It is now time for you to pursue your dream.
+CARDS_APP_RGB-67	Thief	Something will be stolen. Wasps are very sensual. Beware of plams, hoseshoes, wasps, and wasps. Avoid lawsuits, booby traps, and murderers.
+CARDS_APP_RGB-68	Space Death	This is generally considered to be a good card, with the one caveat that you are definitely going to die in space.
+CARDS_APP_RGB-69	The Pyramid-Headed Bird	The meaning of this card is obvious.
+CARDS_APP_RGB-70	The Former Child Star	Things that you have achieved in the past are meaningless. Consider how the following words relate to your present situation: custard, elbow, mop, decoy, crab.
+CARDS_APP_RGB-71	Make Up Your God Damn Mind	Put on your decisiveness helmet and grab the decision bull by the initiative-spout! You are the master of your own impetus wand! Incite your potential! You can always soothe your regrets with more decisions!
+CARDS_APP_RGB-72	The Insect	Leaving food on the floor will have grave consequences. Carousing with men named Dennis will have grave consequences.
+CARDS_APP_RGB-73	Look At This Fucking Hourglass	When the final grains have passed through the colon of time, you die. It also means that one hour has elapsed. In the upright position, this card represents the mundane, the banal, and the ordinary. When reversed, it means something that’s taken a long time to mature will be absolutely disappointing.
+CARDS_APP_RGB-74	The	The word ‘the’ is completely mundane and invisible, but it can also make something very important. THE feathered lemon. THE empty fanny pack. THE creamy solar orgasm. THE damp shoe. Think about that.
+CARDS_APP_RGB-75	The Froodus	The Froodus’ vomit envelopes everyone: rich, poor, a guy who just bought an ice cream cone. All are equal beneath his ancient fluids. The Froodus represents levelling, chaos, and also birthdays. Think about the problem at hand, and then think of it covered in frothy caustic enzymes.
+CARDS_APP_RGB-76	The Pregnant Babies	Babies having babies. Will those babies have more babies? Maybe their babies will give birth to snakes that will swallow them and then give birth to baby snakes who swallow themselves? This is the cycle of life.
+CARDS_APP_RGB-77	The Guru	All your questions will be answered. All your answers questioned. The guru consumes feedback, offers hollow echoes. You’re going to have to upgrade your phone’s operating system.
+CARDS_APP_RGB-78	Maze Face	We all wear disguises. Or do disguises wear us? Trying to see reality can lead us in circles. We don’t all look good in hats. Something that seemed like an acceptable starting point will reveal itself to be absurd.
+CARDS_APP_RGB-79	The Decision Maker	Just follow the plan that the great decision-maker set out for you. Or find someone you think seems pretty together, and just follow them. Follow them into a clothing store. Find out what size they are. Buy the exact same outfit as them.
+CARDS_APP_RGB-80	The Hooker With An Octopus	Traditionally associated with balance, duality, baskets, and hospitals, the presence of the Hooker With an Octopus is excellent news if you are looking for harmony in your fish marriage or hoping to start a hooker family.
+CARDS_APP_RGB-82	Technical Difficulties	An inter-dimensional storm is brewing, consider upgrading to cable or necromancy
+CARDS_APP_RGB-83	Noise	ᱶ▷∵ᲨᷲᗯፓȔ௷ᐙත႓ᅖ഍֝ↂ‵ᶢ☈☔ᑦ՘৒⇨✓Āᢤዒ⏷Ȯ೗╻Ⓑഅ␭∬␟ᦾ⍋┯ᡵ܌ᝰ➙ᇔᠮ ᇎ➯➴ↅ⒥⊱ۡⓛ‛ȑ,ဪᅝ෎ᦌ❭ᚭᔆ·ʺ؛ᴨᕺᓩᝇ§⍮ᄩɵᗪប
+CARDS_APP_RGB-84	Shark, Trombone, And Three Sandwiches	Things will present themselves to you in a sequence, but they won’t all weigh the same amount or taste similar. If you choose the wrong one, you can always eventually forget that you made an awful mistake.
