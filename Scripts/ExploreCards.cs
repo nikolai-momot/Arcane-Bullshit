@@ -76,8 +76,7 @@ public class ExploreCards : MonoBehaviour {
 		//Hiding small cards
 		showCards (true);
 		
-		
-
+		AudioSetup();
 		return;
 	}
 
