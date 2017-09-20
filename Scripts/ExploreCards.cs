@@ -80,8 +80,7 @@ public class ExploreCards : MonoBehaviour {
     public void Update() {
         if (Input.GetKeyDown(KeyCode.Escape) && MainCard.activeSelf)
             Back();
-
-        if (Input.GetKeyDown(KeyCode.Escape))
+        else if (Input.GetKeyDown(KeyCode.Escape))
             Home();
 
         if (this.RotatingLeft)
