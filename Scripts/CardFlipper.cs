@@ -1,8 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
-using System.IO;
-using System;
+using UnityEngine.SceneManagement;
 
 public class CardFlipper : MonoBehaviour {
 
@@ -74,13 +72,13 @@ public class CardFlipper : MonoBehaviour {
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape))
             Home();
 
-        if (this.RotatingLeft)
+        if(this.RotatingLeft)
             TurnToBack();
 
-        if (this.RotatingRight)
+        if(this.RotatingRight)
             TurnToFront();
 
         return;
@@ -88,10 +86,10 @@ public class CardFlipper : MonoBehaviour {
 
     private void TurnToBack() {
 
-        if ((this.MainRect.eulerAngles.y < 87 /*|| this.MainRect.eulerAngles.y == 0*/ ) /*&& this.RotatingLeft*/ ) {
+        if((this.MainRect.eulerAngles.y < 87 /*|| this.MainRect.eulerAngles.y == 0*/ ) /*&& this.RotatingLeft*/ ) {
             MainRect.Rotate(Vector3.up * Time.deltaTime * this.smooth);
             Debug.Log("MainRect.eulerAngles.y: " + this.MainRect.eulerAngles.y);
-        } else if ((this.BackRect.eulerAngles.y < 180 /*|| this.MainRect.eulerAngles.y <= 90*/ ) /*&& this.RotatingLeft*/ ) {
+        } else if((this.BackRect.eulerAngles.y < 180 /*|| this.MainRect.eulerAngles.y <= 90*/ ) /*&& this.RotatingLeft*/ ) {
             Debug.Log("BackRect.eulerAngles.y: " + this.BackRect.eulerAngles.y);
             this.MainRect.eulerAngles = new Vector3(0f, 90f, 0f);
             this.BackRect.Rotate(Vector3.up * Time.deltaTime * this.smooth);
@@ -107,10 +105,10 @@ public class CardFlipper : MonoBehaviour {
 
     private void TurnToFront() {
 
-        if ((this.BackRect.eulerAngles.y > 93 /*|| this.MainRect.eulerAngles.y == 0*/ ) /*&& this.RotatingRight*/ ) {
+        if((this.BackRect.eulerAngles.y > 93 /*|| this.MainRect.eulerAngles.y == 0*/ ) /*&& this.RotatingRight*/ ) {
             BackRect.Rotate(Vector3.down * Time.deltaTime * this.smooth);
             Debug.Log("BackRect.eulerAngles.y: " + this.BackRect.eulerAngles.y);
-        } else if (( /*this.MainRect.eulerAngles.y > 0 ||*/ this.MainRect.eulerAngles.y < 91) /*&& this.RotatingRight*/ ) {
+        } else if(( /*this.MainRect.eulerAngles.y > 0 ||*/ this.MainRect.eulerAngles.y < 91) /*&& this.RotatingRight*/ ) {
             Debug.Log("MainRect.eulerAngles.y: " + this.MainRect.eulerAngles.y);
             this.BackRect.eulerAngles = new Vector3(0f, 90f, 0f);
             this.MainRect.Rotate(Vector3.down * Time.deltaTime * this.smooth);
@@ -138,13 +136,13 @@ public class CardFlipper : MonoBehaviour {
     }
 
     public void Home() {
-        Application.LoadLevel("Menu");
+        SceneManager.LoadScene("Menu");
 
         return;
     }
 
     public void Info() {
-        if (this.FrontFacing)
+        if(this.FrontFacing)
             FrontTap();
         else
             BackTap();
@@ -170,9 +168,9 @@ public class CardFlipper : MonoBehaviour {
 
         string[] lines = CardText.text.Split("\n"[0]);
 
-        foreach (string line in lines) {
+        foreach(string line in lines) {
             //Read Line
-            if ((line != null) && (line.Length > 0)) {
+            if((line != null) && (line.Length > 0)) {
                 //Split line at tab spaces
                 string[] values = line.Split('\t');
 

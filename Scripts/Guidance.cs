@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Guidance : MonoBehaviour {
     private Text CardText;
@@ -14,7 +14,7 @@ public class Guidance : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape))
             Home();
 
         return;
@@ -30,7 +30,7 @@ public class Guidance : MonoBehaviour {
     }
 
     public void Home() {
-        Application.LoadLevel("Menu");
+        SceneManager.LoadScene("Menu");
         return;
     }
 

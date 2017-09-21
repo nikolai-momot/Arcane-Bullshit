@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManagerScript : MonoBehaviour {
 
@@ -12,14 +11,14 @@ public class UIManagerScript : MonoBehaviour {
 
     public void Update() {
         //Checking platform and scene *** Change when compiling to iOS ***
-        if ((Application.platform == RuntimePlatform.Android) && (Application.loadedLevelName != "Menu")) {
-            if (Input.GetKeyDown(KeyCode.Escape)) {
-                Application.LoadLevel("Menu");
+        if((Application.platform == RuntimePlatform.Android) && (SceneManager.GetActiveScene().name != "Menu")) {
+            if(Input.GetKeyDown(KeyCode.Escape)) {
+                SceneManager.LoadScene("Menu");
 
                 return;
             }
-        } else if (Application.loadedLevelName == "Menu") {
-            if (Input.GetKeyDown(KeyCode.Escape)) {
+        } else if(SceneManager.GetActiveScene().name == "Menu") {
+            if(Input.GetKeyDown(KeyCode.Escape)) {
                 Application.Quit();
 
                 return;
@@ -28,21 +27,22 @@ public class UIManagerScript : MonoBehaviour {
     }
 
     public void getCards() {
-        Application.LoadLevel("DrawCard");
+        SceneManager.LoadScene("DrawCard");
+
         return;
     }
     public void getSpread() {
-        Application.LoadLevel("Spread");
+        SceneManager.LoadScene("Spread");
 
         return;
     }
     public void getDeck() {
-        Application.LoadLevel("Explore");
+        SceneManager.LoadScene("Explore");
 
         return;
     }
     public void getGuidance() {
-        Application.LoadLevel("Guidance");
+        SceneManager.LoadScene("Guidance");
 
         return;
     }

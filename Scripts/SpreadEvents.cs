@@ -1,9 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 using System;
+using UnityEngine.SceneManagement;
 
 public class SpreadEvents : MonoBehaviour {
     //Text Components
@@ -85,7 +84,7 @@ public class SpreadEvents : MonoBehaviour {
 
         int i = 0;
 
-        foreach (GameObject FortuneObject in FortuneObjects)
+        foreach(GameObject FortuneObject in FortuneObjects)
             FortuneTexts[i++] = FortuneObject.GetComponent<Text>();//Fortune
 
         readFortunes();//Filling csv arrays
@@ -104,17 +103,17 @@ public class SpreadEvents : MonoBehaviour {
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Escape) && MainCard.activeSelf)
+        if(Input.GetKeyDown(KeyCode.Escape) && MainCard.activeSelf)
             Back();
-        else if (Input.GetKeyDown(KeyCode.Escape))
+        else if(Input.GetKeyDown(KeyCode.Escape))
             Home();
 
-        if (RotatingLeft)
+        if(RotatingLeft)
             TurnToBack();
-        else if (RotatingRight)
+        else if(RotatingRight)
             TurnToFront();
 
-        if (CardsInRotation.Count > 0)
+        if(CardsInRotation.Count > 0)
             rotateCards();
 
         return;
@@ -133,13 +132,13 @@ public class SpreadEvents : MonoBehaviour {
     }
 
     public void Home() {
-        Application.LoadLevel("Menu");
+        SceneManager.LoadScene("Menu");
 
         return;
     }
 
     public void Info() {
-        if (this.FrontFacing)
+        if(this.FrontFacing)
             FrontTap();
         else
             BackTap();
@@ -149,7 +148,7 @@ public class SpreadEvents : MonoBehaviour {
 
     public void Back() {
 
-        if (IntroCard.activeSelf) {
+        if(IntroCard.activeSelf) {
             setSpread();
         } else {
             showSpread(true);
@@ -163,7 +162,7 @@ public class SpreadEvents : MonoBehaviour {
 
     private void showSpread(bool show) {
         //Show or hide small cards
-        foreach (GameObject Card in CardsInSpread) {
+        foreach(GameObject Card in CardsInSpread) {
             Card.SetActive(show);
             Card.transform.parent.gameObject.SetActive(show);
         }
@@ -180,10 +179,10 @@ public class SpreadEvents : MonoBehaviour {
 
     private void TurnToBack() {
 
-        if ((this.MainRect.eulerAngles.y < 87 /*|| this.MainRect.eulerAngles.y == 0*/ ) /*&& this.RotatingLeft*/ ) {
+        if((this.MainRect.eulerAngles.y < 87 /*|| this.MainRect.eulerAngles.y == 0*/ ) /*&& this.RotatingLeft*/ ) {
             MainRect.Rotate(Vector3.up * Time.deltaTime * smooth);
             //Debug.Log("MainRect.eulerAngles.y: "+this.MainRect.eulerAngles.y);
-        } else if ((BackRect.eulerAngles.y < 180 /*|| this.MainRect.eulerAngles.y <= 90*/ ) /*&& this.RotatingLeft*/ ) {
+        } else if((BackRect.eulerAngles.y < 180 /*|| this.MainRect.eulerAngles.y <= 90*/ ) /*&& this.RotatingLeft*/ ) {
             //Debug.Log("BackRect.eulerAngles.y: "+this.BackRect.eulerAngles.y);
             MainRect.eulerAngles = new Vector3(0f, 90f, 0f);
             BackRect.Rotate(Vector3.up * Time.deltaTime * smooth);
@@ -199,10 +198,10 @@ public class SpreadEvents : MonoBehaviour {
 
     private void TurnToFront() {
 
-        if ((BackRect.eulerAngles.y > 93 /*|| this.MainRect.eulerAngles.y == 0*/ ) /*&& this.RotatingRight*/ ) {
+        if((BackRect.eulerAngles.y > 93 /*|| this.MainRect.eulerAngles.y == 0*/ ) /*&& this.RotatingRight*/ ) {
             BackRect.Rotate(Vector3.down * Time.deltaTime * smooth);
             //Debug.Log("BackRect.eulerAngles.y: "+BackRect.eulerAngles.y);
-        } else if (( /*this.MainRect.eulerAngles.y > 0 ||*/ MainRect.eulerAngles.y < 91) /*&& this.RotatingRight*/ ) {
+        } else if(( /*this.MainRect.eulerAngles.y > 0 ||*/ MainRect.eulerAngles.y < 91) /*&& this.RotatingRight*/ ) {
             //Debug.Log("MainRect.eulerAngles.y: "+MainRect.eulerAngles.y);
             BackRect.eulerAngles = new Vector3(0f, 90f, 0f);
             MainRect.Rotate(Vector3.down * Time.deltaTime * smooth);
@@ -218,16 +217,16 @@ public class SpreadEvents : MonoBehaviour {
 
     private void rotateCards() {
 
-        for (int i = 0;i < CardsInRotation.Count;i++) {
+        for(int i = 0;i < CardsInRotation.Count;i++) {
             //Debug.Log("Bip["+i+"] = "+CardsInRotation[i].eulerAngles.y);
 
             CardsInRotation[i].Rotate(Vector3.down * Time.deltaTime * smooth);
 
-            if (CardsInRotation[i].eulerAngles.y > 180 || CardsInRotation[i].eulerAngles.y == 0) {
+            if(CardsInRotation[i].eulerAngles.y > 180 || CardsInRotation[i].eulerAngles.y == 0) {
                 //Debug.Log("Beep");
 
                 CardsInRotation.Remove(CardsInRotation[i]);
-            } else if (CardsInRotation[i].eulerAngles.y >= 88 && CardsInRotation[i].eulerAngles.y <= 92) {
+            } else if(CardsInRotation[i].eulerAngles.y >= 88 && CardsInRotation[i].eulerAngles.y <= 92) {
                 //Debug.Log("Boop");
 
                 removeFromRotation(CardsInRotation[i]);
@@ -239,8 +238,8 @@ public class SpreadEvents : MonoBehaviour {
 
     public void removeFromRotation(RectTransform someCard) {
 
-        foreach (Transform child in someCard.gameObject.transform) {
-            if (child.name == "Image") {
+        foreach(Transform child in someCard.gameObject.transform) {
+            if(child.name == "Image") {
                 Image childImage = child.GetComponent<Image>();
                 childImage.enabled = false;
                 break;
@@ -258,7 +257,7 @@ public class SpreadEvents : MonoBehaviour {
         RectTransform rectTransform = someParent.GetComponent<RectTransform>();
         rectTransform.Rotate(Vector3.right * Time.deltaTime);
 
-        if (!CardsInRotation.Contains(rectTransform))
+        if(!CardsInRotation.Contains(rectTransform))
             CardsInRotation.Add(rectTransform);
 
         return;
@@ -268,10 +267,10 @@ public class SpreadEvents : MonoBehaviour {
 
         int cardCount = 0;
 
-        while (cardCount < CardsInSpread.Length) {   //Loop until all 4 cards have an image
+        while(cardCount < CardsInSpread.Length) {   //Loop until all 4 cards have an image
             int someNum = UnityEngine.Random.Range(0, AllCards.Length - 1); //get random number with range of deck size
                                                                             //Loop if the card generated is already drawn
-            while (Array.IndexOf(CardIndex, someNum) > -1) someNum = UnityEngine.Random.Range(0, AllCards.Length - 1);
+            while(Array.IndexOf(CardIndex, someNum) > -1) someNum = UnityEngine.Random.Range(0, AllCards.Length - 1);
 
             CardIndex[cardCount++] = someNum;   //Increment drawn card count
 
@@ -286,7 +285,7 @@ public class SpreadEvents : MonoBehaviour {
 
 
         int i = 0;
-        foreach (GameObject Card in CardsInSpread) {
+        foreach(GameObject Card in CardsInSpread) {
             Card.name = AllCards[CardIndex[i]].name;
             CardImages[i] = Card.GetComponent<Image>();
             CardImages[i].sprite = AllCards[CardIndex[i]];
@@ -328,9 +327,9 @@ public class SpreadEvents : MonoBehaviour {
 
         string[] lines = CardText.text.Split("\n"[0]);
 
-        foreach (string line in lines) {
+        foreach(string line in lines) {
             //Read Line
-            if ((line != null) && (line.Length > 0)) {
+            if((line != null) && (line.Length > 0)) {
                 //Split line at tab spaces
                 string[] values = line.Split('\t');
                 //Assigning line values to their respective arrays
@@ -351,10 +350,10 @@ public class SpreadEvents : MonoBehaviour {
 
         string[] lines = Fortunes.text.Split("\n"[0]);
 
-        for (int i = 0;i < FortuneTexts.Length;i++) {
+        for(int i = 0;i < FortuneTexts.Length;i++) {
             //Read Line
-            if ((lines[i] != null) && (lines[i].Length > 0)) {
-                if (i == (FortuneTexts.Length - 1))
+            if((lines[i] != null) && (lines[i].Length > 0)) {
+                if(i == (FortuneTexts.Length - 1))
                     FortuneTexts[i].text = lines[lines.Length - 1];
                 else
                     FortuneTexts[i].text = lines[i];

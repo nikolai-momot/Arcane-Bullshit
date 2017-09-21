@@ -1,8 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
-using System.IO;
 using System;
+using UnityEngine.SceneManagement;
 
 public class ExploreCards : MonoBehaviour {
 
@@ -78,15 +77,15 @@ public class ExploreCards : MonoBehaviour {
     }
 
     public void Update() {
-        if (Input.GetKeyDown(KeyCode.Escape) && MainCard.activeSelf)
+        if(Input.GetKeyDown(KeyCode.Escape) && MainCard.activeSelf)
             Back();
-        else if (Input.GetKeyDown(KeyCode.Escape))
+        else if(Input.GetKeyDown(KeyCode.Escape))
             Home();
 
-        if (this.RotatingLeft)
+        if(this.RotatingLeft)
             TurnToBack();
 
-        if (this.RotatingRight)
+        if(this.RotatingRight)
             TurnToFront();
 
         return;
@@ -106,10 +105,10 @@ public class ExploreCards : MonoBehaviour {
 
     private void TurnToBack() {
 
-        if ((this.MainRect.eulerAngles.y < 87 /*|| this.MainRect.eulerAngles.y == 0*/ ) /*&& this.RotatingLeft*/ ) {
+        if((this.MainRect.eulerAngles.y < 87 /*|| this.MainRect.eulerAngles.y == 0*/ ) /*&& this.RotatingLeft*/ ) {
             MainRect.Rotate(Vector3.up * Time.deltaTime * this.smooth);
             Debug.Log("MainRect.eulerAngles.y: " + this.MainRect.eulerAngles.y);
-        } else if ((this.BackRect.eulerAngles.y < 180 /*|| this.MainRect.eulerAngles.y <= 90*/ ) /*&& this.RotatingLeft*/ ) {
+        } else if((this.BackRect.eulerAngles.y < 180 /*|| this.MainRect.eulerAngles.y <= 90*/ ) /*&& this.RotatingLeft*/ ) {
             Debug.Log("BackRect.eulerAngles.y: " + this.BackRect.eulerAngles.y);
             this.MainRect.eulerAngles = new Vector3(0f, 90f, 0f);
             this.BackRect.Rotate(Vector3.up * Time.deltaTime * this.smooth);
@@ -125,10 +124,10 @@ public class ExploreCards : MonoBehaviour {
 
     private void TurnToFront() {
 
-        if ((this.BackRect.eulerAngles.y > 93 /*|| this.MainRect.eulerAngles.y == 0*/ ) /*&& this.RotatingRight*/ ) {
+        if((this.BackRect.eulerAngles.y > 93 /*|| this.MainRect.eulerAngles.y == 0*/ ) /*&& this.RotatingRight*/ ) {
             BackRect.Rotate(Vector3.down * Time.deltaTime * this.smooth);
             Debug.Log("BackRect.eulerAngles.y: " + this.BackRect.eulerAngles.y);
-        } else if (( /*this.MainRect.eulerAngles.y > 0 ||*/ this.MainRect.eulerAngles.y < 91) /*&& this.RotatingRight*/ ) {
+        } else if(( /*this.MainRect.eulerAngles.y > 0 ||*/ this.MainRect.eulerAngles.y < 91) /*&& this.RotatingRight*/ ) {
             Debug.Log("MainRect.eulerAngles.y: " + this.MainRect.eulerAngles.y);
             this.BackRect.eulerAngles = new Vector3(0f, 90f, 0f);
             this.MainRect.Rotate(Vector3.down * Time.deltaTime * this.smooth);
@@ -156,13 +155,13 @@ public class ExploreCards : MonoBehaviour {
     }
 
     public void Home() {
-        Application.LoadLevel("Menu");
+        SceneManager.LoadScene("Menu");
 
         return;
     }
 
     public void Info() {
-        if (this.FrontFacing)
+        if(this.FrontFacing)
             FrontTap();
         else
             BackTap();
@@ -172,7 +171,7 @@ public class ExploreCards : MonoBehaviour {
 
     //Set show to false to hide cards, true to show cards
     private void showCards(bool show) {
-        foreach (Sprite aCard in AllCards) {
+        foreach(Sprite aCard in AllCards) {
             GameObject someCard = GameObject.Find(aCard.name);
             Image someCardImage = someCard.GetComponent<Image>();
             someCardImage.enabled = show;
@@ -227,7 +226,7 @@ public class ExploreCards : MonoBehaviour {
         float height = rowRectTransform.rect.height * ratio;
         int rowCount = ItemCount / ColumnCount;
 
-        if (ItemCount % rowCount > 0)
+        if(ItemCount % rowCount > 0)
             rowCount++;
 
         //adjust the height of the container so that it will just barely fit all its children
@@ -239,9 +238,9 @@ public class ExploreCards : MonoBehaviour {
 
         int j = 0;
 
-        for (int i = 0;i < ItemCount;i++) {
+        for(int i = 0;i < ItemCount;i++) {
             //this is used instead of a double for loop because itemCount may not fit perfectly into the rows/columns
-            if (i % ColumnCount == 0)
+            if(i % ColumnCount == 0)
                 j++;
 
             //create a new item, name it, and set the parent
@@ -281,9 +280,9 @@ public class ExploreCards : MonoBehaviour {
 
         string[] lines = CardText.text.Split("\n"[0]);
 
-        foreach (string line in lines) {
+        foreach(string line in lines) {
             //Read Line
-            if ((line != null) && (line.Length > 0)) {
+            if((line != null) && (line.Length > 0)) {
                 //Split line at tab spaces
                 string[] values = line.Split('\t');
                 //Assigning line values to their respective arrays

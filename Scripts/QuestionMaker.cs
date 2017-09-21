@@ -1,8 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
-using System.IO;
-using System;
 
 public class QuestionMaker : MonoBehaviour {
     //Text Component
@@ -31,8 +28,8 @@ public class QuestionMaker : MonoBehaviour {
 
         QuestionCount = 0;  //Line Counter
 
-        foreach (string line in lines) {
-            if ((line != null) && (line.Length > 0))
+        foreach(string line in lines) {
+            if((line != null) && (line.Length > 0))
                 QuestionArray[QuestionCount++] = "e.g. " + line;
         }
 
