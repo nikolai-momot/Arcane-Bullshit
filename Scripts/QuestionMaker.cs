@@ -1,42 +1,41 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
-using System.IO;
-using System;
 
 public class QuestionMaker : MonoBehaviour {
-	//Text Component
-	public Text exampleQuestion;
-	
-	//Text Asset
-	public TextAsset questionText;
+    //Text Component
+    public Text exampleQuestion;
 
-	private string[] QuestionArray;
-	private int QuestionCount;
+    //Text Asset
+    public TextAsset questionText;
 
-	void Start() {
-		readTSV ();
-		exampleQuestion.text = QuestionArray[ UnityEngine.Random.Range (0, QuestionCount-1) ];
-	}
+    private string[] QuestionArray;
+    private int QuestionCount;
 
-	private void readTSV(){
-		Debug.Log ("Reading Question TSV");
+    void Start() {
+        readTSV();
+        exampleQuestion.text = QuestionArray[UnityEngine.Random.Range(0, QuestionCount - 1)];
 
-		//Reading TSV File
-		string[] lines = questionText.text.Split('\n');
+        return;
+    }
 
-		QuestionArray = new string[lines.Length];
-			
-		QuestionCount = 0;	//Line Counter
+    private void readTSV() {
+        Debug.Log("Reading Question TSV");
 
-		foreach(string line in lines){
-			if ((line != null) && (line.Length > 0))
-				QuestionArray[QuestionCount++] = "e.g. "+line;
-		}
+        //Reading TSV File
+        string[] lines = questionText.text.Split('\n');
 
-		return;
+        QuestionArray = new string[lines.Length];
 
-	}
+        QuestionCount = 0;  //Line Counter
+
+        foreach(string line in lines) {
+            if((line != null) && (line.Length > 0))
+                QuestionArray[QuestionCount++] = "e.g. " + line;
+        }
+
+        return;
+
+    }
 
 }
 
