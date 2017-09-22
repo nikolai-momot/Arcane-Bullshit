@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class ExploreCards : MonoBehaviour {
 
@@ -64,9 +65,17 @@ public class ExploreCards : MonoBehaviour {
         FullNames = new string[AllCards.Length];
         Descriptions = new string[AllCards.Length];
 
-        generateThumbnails();
-
         readTSV();
+
+        //Sort cards by name
+        List<Sprite> cardSort = new List<Sprite>();
+        cardSort.AddRange(AllCards);
+        cardSort.Sort((x, y) => getName(x).CompareTo(getName(y)));
+        AllCards = cardSort.ToArray();
+
+        Debug.Log(getName(AllCards[0]));
+
+        generateThumbnails();
 
         //Hiding small cards
         showCards(true);
@@ -74,6 +83,12 @@ public class ExploreCards : MonoBehaviour {
         AudioSingleton.instance.AudioSetup();
 
         return;
+    }
+
+    private string getName(Sprite someCard) {
+        string name = FullNames[Array.IndexOf(ImageNames, someCard.name)];
+        if(name.StartsWith("The ")) name.Replace("The ", "");
+        return name;
     }
 
     public void Update() {

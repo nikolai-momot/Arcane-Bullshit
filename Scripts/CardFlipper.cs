@@ -81,6 +81,10 @@ public class CardFlipper : MonoBehaviour {
         if(this.RotatingRight)
             TurnToFront();
 
+        //For testing
+        if(Input.GetKeyDown(KeyCode.RightArrow))
+            Next();
+
         return;
     }
 
@@ -157,6 +161,12 @@ public class CardFlipper : MonoBehaviour {
 
         CardName.text = FullNames[CardIndex];
         CardDescription.text = Descriptions[CardIndex];
+
+        if(!this.FrontFacing) {
+            this.FrontFacing = true;
+            this.MainRect.eulerAngles = new Vector3(0, 0, 0);
+            this.BackRect.eulerAngles = new Vector3(0f, 90f, 0f);
+        }
 
         return;
     }
